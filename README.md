@@ -1,0 +1,1 @@
+A small website for a fictive e-sports-team.
