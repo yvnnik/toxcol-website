@@ -1,5 +1,17 @@
-:root{
+:root {
     --primary-text-color: white;
+    --primary-color: #1e0f2e;
+    --secondary-color: #1dbd51;
+    --tertiary-color: #cf62a7;
+    --primary-background-color: #1e0f2e;
+    --secondary-background-color: #301948;
+    --shadow-position: 0 0.1rem 1rem 0.1rem;
+    --primary-shadow-color: #634f64;
+    --secondary-shadow-color: #C4CBE1;
+    --top-margin: 0.5rem;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
 }
 
 * {
@@ -81,9 +93,86 @@ body {
 }
 
 .hero-img {
-    position: absolute;
     width: 100%;
     bottom: 0;
+    background-color: var(--primary-background-color);
+}
+
+.team {
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-background-color);
+    padding: 32px 0;
+}
+
+.team h2 {
+    color: var(--primary-text-color);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container .card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 300px;
+    height: 10rem;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: var(--shadow-position) var(--primary-shadow-color);
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+    background-color: var(--primary-text-color);
+    color: var(--primary-background-color);
+}
+
+.container .card:hover {
+    height: 16rem;
+}
+
+.container .card .member-img {
+    position: relative;
+    width: 260px;
+    height: 8rem;
+    top: -40%;
+    box-shadow: var(--shadow-position) var(--primary-shadow-color);
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.container .card .member-img img {
+    width: 100%;
+    border-radius: 15px;
+    max-height: 10rem;
+}
+
+.container .card .content {
+    position: relative;
+    top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card .content h3 {
+    margin-bottom: var(--bottom-margin);
+}
+
+.container .card:hover .content {
+    margin-top: 6rem;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
 }
 
 @media (max-width: 990px) {
