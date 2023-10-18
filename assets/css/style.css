@@ -472,6 +472,12 @@ footer {
     td:not(:first-of-type) {
         min-width: 12.1rem;
     }
+
+    .hero-img {
+        height: 50rem;
+        object-fit: cover;
+    }
+
 }
 
 @media (max-width: 770px) {
@@ -524,13 +530,32 @@ footer {
         transition-delay: calc(.15s * var(--i));
     }
 
-    .contact .main {
-        flex-direction: column;
+    .hero-img {
+        height: 45rem;
+        top: 16rem;
+        object-fit: cover;
     }
 
-    .contact iform {
-        margin-top: 30px;
-        margin-bottom: 10px;
+    .about p {
+        margin: 2rem;
+    }
+
+    .highlights p {
+        margin: 2rem;
+    }
+    
+    .video iframe {
+        margin: 1rem;
+        width: 320px;
+        height: 168px;
+    }
+    
+    .contact {
+        height: 60rem;
+    }
+
+    .contact .main {
+        flex-direction: column;
     }
 
     .form-img {
@@ -540,7 +565,7 @@ footer {
         order: 2;
     }
 
-    .content {
+    .main .content {
         order: 1;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
