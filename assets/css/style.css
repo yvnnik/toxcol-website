@@ -565,9 +565,10 @@ footer {
         order: 2;
     }
 
-    .main .content {
+    .contact .content {
         order: 1;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
     }
 }
