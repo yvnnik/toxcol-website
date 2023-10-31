@@ -567,12 +567,6 @@ footer {
         transition-delay: calc(.15s * var(--i));
     }
 
-    .hero-img {
-        height: 45rem;
-        top: 16rem;
-        object-fit: cover;
-    }
-
     .about p {
         margin: 2rem;
     }
